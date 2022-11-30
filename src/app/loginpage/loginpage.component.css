@@ -1,0 +1,55 @@
+.main {
+    max-width: 550px;
+    height: 550px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+    left: 30%;
+    background-color: rgb(3, 3, 79);
+    border-radius: 5px;
+}
+
+.login {
+    background-color: white;
+    border-radius: 7px;
+    width: 350px;
+    height: 430px;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5%;
+    text-align: center;
+}
+
+.mat-card-title {
+    position: relative;
+    top: -2%;
+}
+
+.mat-card-subtitle {
+    font-size: 30px;
+    color: black;
+    position: relative;
+    top: -7%;
+    left: -3%;
+
+}
+
+.mat-form-field {
+    width: 300px;
+    padding-bottom: 3px;
+
+}
+
+
+.mat-flat-button {
+    width: 300px;
+}
+
+p {
+    text-align: right;
+    padding: 0 0 0 0;
+}
