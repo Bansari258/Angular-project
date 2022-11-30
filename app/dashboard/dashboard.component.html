@@ -1,0 +1,138 @@
+<div class="body">
+  <mat-toolbar color="primary">
+    <mat-icon class="ic" aria-hidden="false" aria-label="Example menu icon">menu</mat-icon>
+    <span class="main">Energyviss / Live dashboard</span>
+    <span class="example-spacer"></span>
+
+    <mat-icon class="icon" aria-hidden="false" aria-label="Example refresh icon" fontIcon="refresh">refresh</mat-icon>
+    <mat-icon class="icon" aria-hidden="false" aria-label="Example alarm icon"> alarm</mat-icon>
+    <mat-icon class="icon" aria-hidden="false" aria-label="Example person icon" fontIcon="person">person</mat-icon>
+
+  </mat-toolbar>
+
+  <mat-card class="card1">
+    <mat-card-content>
+      <div class="div1">
+        <h3> Floor:- </h3>
+        <mat-form-field appearance="fill">
+          <mat-label>FLOOR:-</mat-label>
+          <mat-select [(value)]="horizontalPosition">
+            <mat-option value="1">1</mat-option>
+            <mat-option value="2">2</mat-option>
+            <mat-option value="3">3</mat-option>
+            <mat-option value="4">4</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="div1">
+        <h3> SECTION:- </h3>
+        <mat-form-field appearance="fill">
+          <mat-label>Section</mat-label>
+          <mat-select [(value)]="horizontalPosition">
+            <mat-option value="lab1">lab1</mat-option>
+            <mat-option value="lab2">lab2</mat-option>
+            <mat-option value="lab3">lab3</mat-option>
+
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="div1">
+        <h3> VIEW:- </h3>
+        <mat-form-field appearance="fill">
+          <mat-label>View</mat-label>
+          <mat-select [(value)]="horizontalPosition">
+            <mat-option value="Indivisual">Indivisual</mat-option>
+
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="div1">
+        <h3> METER:- </h3>
+        <mat-form-field appearance="fill">
+          <mat-label>Meter</mat-label>
+          <mat-select [(value)]="horizontalPosition">
+            <mat-option value="Meter 2r">Meter 2</mat-option>
+            <mat-option value="meter 3 "> Meter 3</mat-option>
+            <mat-option value="Meter 4"> meter 4</mat-option>
+            <mat-option value="Meter 5"> meter 5</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+
+
+
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="card2">
+    <mat-card-content>
+      <div class="con">
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ENERGY:-<b
+          style="color:red ;"> 150,610kWh </b> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; LAST UPDATE:- <b style="color:red ;"> 30/11/22 11:10 PM </b>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NEXT HOUR PREDICTED ENERGY:- <b style="color:red ;"> 157,393.05
+          kWh </b>
+
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="card3">
+    <b>
+      KEY PERAMETERS </b>
+
+    <mat-card-content>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <div class="progress-bar" id="bar">
+        <div class="barOverflow">
+          <div class="bar1"></div>
+        </div>
+        <span class="vol">240.32 <br> Voltage(v) </span>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <div class="progress-bar" id="bar">
+        <div class="barOverflow">
+          <div class="bar2"></div>
+        </div>
+        <span class="vol">11.07 <br> Current(A)</span>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <div class="progress-bar" id="bar">
+        <div class="barOverflow">
+          <div class="bar3"></div>
+        </div>
+        <span class="vol">0.17 <br> Power(pWh)</span>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <div class="progress-bar" id="bar">
+        <div class="barOverflow">
+          <div class="bar4"></div>
+        </div>
+        <span class="vol">0.3 <br> Power Factor </span>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <div class="progress-bar" id="bar">
+        <div class="barOverflow">
+          <div class="bar5"></div>
+        </div>
+        <span class="vol">50.6<br> frequancy </span>
+      </div>
+
+    </mat-card-content>
+
+  </mat-card>
+  <mat-card class="card4">
+    <mat-card-title> power(kw)</mat-card-title>
+    <div>
+      <canvas id="myChart" width="800" height="300"></canvas>
+    </div>
+  </mat-card>
+  <mat-card class="card5">
+    <mat-card-title> power Factor</mat-card-title>
+    <canvas id="myChart" width="800" height="300"></canvas>
+  </mat-card>
+  <mat-icon class="ic" aria-hidden="false" aria-label="Example message icon">message</mat-icon>
+
+
+</div>
